@@ -1,4 +1,4 @@
-name: Bug Report
+name: バグ報告
 description: 発生した問題の報告
 title: "[BUG]: "
 labels: ["bug", "triage"]
@@ -47,7 +47,7 @@ body:
         - 1.9
     validations:
       required: true
-- type: textarea
+  - type: textarea
     id: what-happened
     attributes:
       label: 発生した問題
@@ -56,7 +56,7 @@ body:
       value: "バグが生じました!"
     validations:
       required: true
-- type: textarea
+  - type: textarea
     id: logs
     attributes:
       label: Relevant log output
