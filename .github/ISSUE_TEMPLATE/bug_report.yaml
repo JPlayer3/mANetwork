@@ -57,7 +57,7 @@ body:
     validations:
       required: true
   - type: input
-    id: contact
+    id: log
     attributes:
       label: クラッシュログ
       description: ログを張り付けてURLを共有してください。[Pastebin](https://pastebin.com/)
