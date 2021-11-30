@@ -56,25 +56,27 @@ body:
       value: "バグが生じました!"
     validations:
       required: true
-  - type: textarea
-    id: logs
+  - type: input
+    id: contact
     attributes:
-      label: Relevant log output
-      description: 関連するログの出力をコピーしてペーストしてください。 これは自動的にコードにフォーマットされるので、バックティックは不要です。
-      render: shell
+      label: クラッシュログ
+      description: ログを張り付けてURLを共有してください。[Pastebin](https://pastebin.com/)
+      placeholder: https://pastebin.com/
+    validations:
+      required: false
   - type: checkboxes
-    id: terms
+    id: confirmation
     attributes:
-      label: Code of Conduct
-      description: このIssueをサブミットすることで、あなたは私たちの [行動規範](https://example.com)に同意したことになります。
+      label: 確認
+      description: [Issue](https://github.com/mA0w0/mANetwork/issues)
       options:
-        - label: I agree to follow this project's Code of Conduct
+        - label: 同じ問題が報告されてないことを確認しました。
           required: true
   - type: input
     id: contact
     attributes:
       label: 連絡先
-      description: 別の連絡先
+      description: Discordまたはメールアドレス
       placeholder: discord#0000 / email@example.com
     validations:
       required: false
