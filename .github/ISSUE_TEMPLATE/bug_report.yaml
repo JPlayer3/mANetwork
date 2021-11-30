@@ -1,6 +1,6 @@
-name: Bug Report
-description: File a bug report
-title: "[Bug]: "
+name: バグ報告
+description: 発生した問題の報告
+title: "[BUG]: "
 labels: ["bug", "triage"]
 assignees:
   - octocat
@@ -8,7 +8,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!
+        バグレポートにご協力いただきありがとうございます。
   - type: input
     id: contact
     attributes:
@@ -20,32 +20,53 @@ body:
   - type: textarea
     id: what-happened
     attributes:
-      label: What happened?
+      label: 発生した問題
       description: また、生じると期待されていたことは何でしょうか？
       placeholder: Tell us what you see!
       value: "バグが生じました!"
     validations:
       required: true
   - type: dropdown
-    id: version
+    id: server
     attributes:
-      label: Version
-      description: 実行していたソフトウェアのバージョンは?
+      label: サーバー
+      description: 問題が起きた時接続していたサーバー
       options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
+        - Hub
+        - サバイバル
     validations:
       required: true
   - type: dropdown
-    id: browsers
+    id: client
     attributes:
-      label: What browsers are you seeing the problem on?
+      label: クライアントの種類
+      description: 接続していた時に使用していたクライアント
       multiple: true
       options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
+        - 公式のバージョン
+        - Forge
+        - Fabric
+        - 統合版
+        - その他
+  - type: dropdown
+    id: version
+    attributes:
+      label: バージョン
+      description: 接続していた時に使用していたバージョン
+      multiple: true
+      options:
+        - 1.18
+        - 1.17
+        - 1.16
+        - 1.15
+        - 1.14
+        - 1.13
+        - 1.12
+        - 1.11
+        - 1.10
+        - 1.9
+    validations:
+      required: true
   - type: textarea
     id: logs
     attributes:
