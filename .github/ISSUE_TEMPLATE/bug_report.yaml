@@ -61,8 +61,8 @@ body:
     attributes:
       label: 再現
       description: 問題を再現するための手順
-      placeholder: Tell us what you see!
-      value: "バグが生じました!"
+      placeholder: 詳細にお願いします
+      value: "詳細にお願いします!"
     validations:
       required: false
   - type: input
@@ -80,8 +80,7 @@ body:
       description: [Issue](https://github.com/mA0w0/mANetwork/issues) [Wiki](https://github.com/mA0w0/mANetwork/wiki) [Discord](https://discord.com)
       options:
         - label: 同じ問題が報告されてないことを確認しました。
-    validations:
-      required: false
+          required: true
   - type: input
     id: contact
     attributes:
