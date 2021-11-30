@@ -81,6 +81,10 @@ body:
       options:
         - label: 同じ問題が報告されてないことを確認しました。
           required: true
+        - label: Wikiを読みました。
+          required: true
+        - label: Discordに参加しています。
+          required: true
   - type: input
     id: contact
     attributes:
