@@ -1,8 +1,8 @@
 blank_issues_enabled: false
 contact_links:
-  - name: GitHub Community Support
+  - name: GitHubコミュニティサポート
     url: https://github.community/
-    about: Please ask and answer questions here.
-  - name: GitHub Security Bug Bounty
+    about: 質問や回答はこちらでお願いします。
+  - name: GitHubセキュリティバグ
     url: https://bounty.github.com/
-    about: Please report security vulnerabilities here.
+    about: セキュリティ脆弱性の報告はこちらからお願いします。
