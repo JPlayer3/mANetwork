@@ -57,7 +57,7 @@ body:
     validations:
       required: true
   - type: textarea
-    id: Imitation
+    id: imitation
     attributes:
       label: 再現
       description: 問題を再現するための手順
