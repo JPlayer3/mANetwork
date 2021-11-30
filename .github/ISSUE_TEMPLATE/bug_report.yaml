@@ -79,11 +79,12 @@ body:
       label: 確認
       description: [Issue](https://github.com/mA0w0/mANetwork/issues) [Wiki](https://github.com/mA0w0/mANetwork/wiki) [Discord](https://discord.com)
       options:
-        - 同じ問題が報告されてないことを確認しました。
+        - label: 同じ問題が報告されてないことを確認しました。
+          required: true
         - Wikiを読みました。
+          required: true
         - Discordに参加しています。
-    validations:
-      required: true
+          required: true
   - type: input
     id: contact
     attributes:
