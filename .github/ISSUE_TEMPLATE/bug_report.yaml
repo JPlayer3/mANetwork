@@ -5,27 +5,6 @@ labels: ["bug", "triage"]
 assignees:
   - octocat
 body:
-  - type: markdown
-    attributes:
-      value: |
-        バグレポートにご協力いただきありがとうございます。
-  - type: input
-    id: contact
-    attributes:
-      label: Contact Details
-      description: さらに情報が必要な場合、どのように連絡すればよいでしょうか？
-      placeholder: ex. email@example.com
-    validations:
-      required: false
-  - type: textarea
-    id: what-happened
-    attributes:
-      label: 発生した問題
-      description: また、生じると期待されていたことは何でしょうか？
-      placeholder: Tell us what you see!
-      value: "バグが生じました!"
-    validations:
-      required: true
   - type: dropdown
     id: server
     attributes:
@@ -34,6 +13,7 @@ body:
       options:
         - Hub
         - サバイバル
+      multiple: true
     validations:
       required: true
   - type: dropdown
@@ -41,19 +21,19 @@ body:
     attributes:
       label: クライアントの種類
       description: 接続していた時に使用していたクライアント
-      multiple: true
       options:
         - 公式のバージョン
         - Forge
         - Fabric
         - 統合版
         - その他
+    validations:
+      required: true
   - type: dropdown
     id: version
     attributes:
       label: バージョン
       description: 接続していた時に使用していたバージョン
-      multiple: true
       options:
         - 1.18
         - 1.17
@@ -67,7 +47,16 @@ body:
         - 1.9
     validations:
       required: true
-  - type: textarea
+- type: textarea
+    id: what-happened
+    attributes:
+      label: 発生した問題
+      description: また、生じると期待されていたことは何でしょうか？
+      placeholder: Tell us what you see!
+      value: "バグが生じました!"
+    validations:
+      required: true
+- type: textarea
     id: logs
     attributes:
       label: Relevant log output
@@ -81,3 +70,15 @@ body:
       options:
         - label: I agree to follow this project's Code of Conduct
           required: true
+  - type: input
+    id: contact
+    attributes:
+      label: 連絡先
+      description: 別の連絡先
+      placeholder: discord#0000 / email@example.com
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: |
+        バグレポートにご協力いただきありがとうございます。
