@@ -1,4 +1,4 @@
-name: バグ報告
+name: Bug Report
 description: 発生した問題の報告
 title: "[BUG]: "
 labels: ["bug", "triage"]
