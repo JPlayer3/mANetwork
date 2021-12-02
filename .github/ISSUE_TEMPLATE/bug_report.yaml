@@ -1,5 +1,6 @@
 name: バグ報告
 description: 発生した問題の報告
+placeholder: 題名
 labels: ["バグ", "triage"]
 assignees:
   - octocat
@@ -51,8 +52,7 @@ body:
     attributes:
       label: 発生した問題
       description: どのような問題が発生しましたか？
-      placeholder: Tell us what you see!
-      value: "バグが生じました!"
+      placeholder: バグが生じました!
     validations:
       required: true
   - type: textarea
@@ -61,7 +61,6 @@ body:
       label: 再現
       description: 問題を再現するための手順
       placeholder: 詳細にお願いします
-      value: "詳細にお願いします!"
     validations:
       required: false
   - type: input
