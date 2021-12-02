@@ -1,8 +1,8 @@
 blank_issues_enabled: false
 contact_links:
-  - name: GitHubコミュニティサポート
-    url: https://github.community/
+  - name: Discordサポート
+    url: https://github.com/
     about: 質問や回答はこちらでお願いします。
-  - name: GitHubセキュリティバグ
-    url: https://bounty.github.com/
-    about: セキュリティ脆弱性の報告はこちらからお願いします。
+  #- name: Twiiter
+  #  url: https://bounty.github.com/
+  #  about: セキュリティ脆弱性の報告はこちらからお願いします。
