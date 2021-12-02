@@ -1,6 +1,5 @@
 name: バグ報告
 description: 発生した問題の報告
-title: ""
 labels: ["バグ", "triage"]
 assignees:
   - octocat
